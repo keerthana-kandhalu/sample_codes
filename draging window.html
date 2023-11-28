@@ -1,0 +1,56 @@
+<html>
+    <head><style>
+        .window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.window-header {
+  padding: 10px;
+  cursor: move;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.window-content {
+  padding: 10px;
+}
+    </style></head>
+    <body>
+<div class="window" id="draggable-window">
+    <div class="window-header">Draggable Window</div>
+    <div class="window-content">
+      <!-- Window content goes here -->
+    </div>
+  </div>
+  <script>
+    var draggableElement = document.getElementById('draggable-window');
+var isDragging = false;
+var mouseOffset = { x: 0, y: 0 };
+
+draggableElement.addEventListener('mousedown', function (e) {
+  isDragging = true;
+  mouseOffset.x = e.clientX - draggableElement.offsetLeft;
+  mouseOffset.y = e.clientY - draggableElement.offsetTop;
+});
+
+document.addEventListener('mouseup', function () {
+  isDragging = false;
+});
+
+document.addEventListener('mousemove', function (e) {
+  if (isDragging) {
+    draggableElement.style.left = e.clientX - mouseOffset.x + 'px';
+    draggableElement.style.top = e.clientY - mouseOffset.y + 'px';
+  }
+});
+
+    </script>
+  </body>
+</html>  
