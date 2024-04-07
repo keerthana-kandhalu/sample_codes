@@ -1,0 +1,172 @@
+<html>
+ <head>
+  <style>
+  .flex_container{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+  }
+  
+  .form input[type="password"], .form input[type="email"], .form input[type="submit"] {
+      padding:4px;
+      border-radius: 0.25rem; 
+      margin-bottom:-14px;
+}
+
+
+  .form input[type="submit"]{
+    background-color:#108ACB;
+    color:white;
+    width:250px;
+    border-color: white;
+}
+
+.firstchild{
+    background-color:#74787A; 
+    padding:20px;
+    width:257.531px;
+    display: inline-block;
+    height:307.812px;
+    padding-top: 38px;
+    padding-bottom: 80px;
+
+}
+
+.secondchild{
+    display: inline-block;
+    padding:20px;
+    padding-left: 66px;
+    padding-right: 30px;
+    background-color:white;
+    width:257.531px;
+    display: inline-block;
+    height:307.812px;
+    padding-top: 38px;
+    padding-bottom: 80px;
+
+}
+.topic{
+    margin-bottom:-30px;
+}
+.outer{
+      background-color:#DCEBF3;
+      padding:20px;
+      position: absolute;
+        right: 200px;
+        left: 179px;
+      height: 331px;
+      width:700px;
+      padding-top: 50px;
+      padding-bottom: 137px;
+}
+
+#icon{
+        text-align: center;
+        width: 25%;
+}
+.hr-lines{
+      position: relative;
+      max-width: 500px;
+      margin: 15px auto;
+      text-align: center;
+      font-size: 10px;
+      color:#CAC5C4;
+}
+
+.hr-lines:before{
+      content:" ";
+      height: 2px;
+      width: 80px;
+      background: rgb(231, 230, 230);
+      display: block;
+      position: absolute;
+      top: 50%;
+  
+}
+
+.hr-lines:after{
+      content:" ";
+      height: 2px;
+      width: 80px;
+      background: rgb(231, 230, 230);
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+}
+.inner_flex{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top:107px;
+}
+.inner_flex2{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:18px;
+}
+#ic{
+  text-items: center;
+}
+  </style>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+
+ <body style="margin:128px;">
+    <div  class="outer">
+    <div class="flex_container">
+ 
+      <div class="firstchild" > 
+        <div class="inner_flex">
+          <div class="icon1bg" style="background-color: #F4E90A;border-radius: 50%; height:50px; width:50px;">
+            <i class="fa-thin fa-face-thinking" id="icon"></i>
+          </div>
+          <div class="icon1bg" style="background-color: #C78CE5;border-radius: 50%; height:50px; width:50px;"></div>
+          <div class="icon1bg" style="background-color: #3FFA3C;border-radius: 50%; height:50px; width:50px;"></div>
+        </div>
+        <div style="text-align: center;color:white; margin-top:30px;">
+          Start to Design <br/>wisely
+        </div> 
+        <div style="text-align: center;color:rgb(233, 230, 230); margin-top:12px; font-size: 10px; padding-left:30px;padding-right:20px;">
+          A full value product supporting the design process<br/>
+          using figma auto layouts and variants.
+        </div>
+        <div class="inner_flex2">
+          <div class="icon1bg" style="background-color:rgb(168, 162, 162);border-radius: 50%; height:30px; width:30px;">         
+          </div>
+          <div class="icon1bg" style="background-color: white;border-radius: 50%; height:30px; width:30px;"></div>
+        </div>
+      </div>
+   
+      <div class="secondchild" >
+
+          <h2 style="font:arial;text-align:center;margin-top:0px">Sign in to clever</h2>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-google" id="icon" style="color: #000000;"></i>
+          <i class="fa-brands fa-apple" id="icon"></i>
+          <i class="fa-brands fa-facebook" id="icon"></i>
+          <h2 class="hr-lines"> Or do it via Email </h2>
+        
+          <form action="" method="post" class="form">
+              <h6 class="topic">E-mail</h6><br/><br/>
+              <input type="email" placeholder="@mail.com"><br/>
+              <h6 class="topic">Password</h6><br/></br>
+              <input type="password" placeholder="Password">
+              <h6 style="color:grey;padding:0px;margin-bottom:8px;">Must be 8 characters at least</h6><br/>
+              <input type="checkbox">Remember Me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" style="text-align=left;color:blue;">Forgot password</a><br/><br/>
+              <input type="submit" value="Sign in">
+              <h6 style="color:#CAC5C4;text-align:center;">@2021 All Rights Reserved</h6><br/>
+          </form>
+
+      </div>
+   </div>
+ </div>
+</body>
+</html>
+
